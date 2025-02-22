@@ -1,0 +1,449 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    color: #055730;
+}
+
+
+/****************************************************HEADER**************************************************/
+
+header {
+    background: #055730;
+    color: #fff;
+    padding: 10px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav img {
+    margin-left: 10%;
+}
+
+.btn {
+    margin-right: 10%;
+    width: 190px;
+    border-radius: 70px;
+    background-color: #9cc5a1;
+    border: none;
+
+}
+
+button li {
+    list-style: none;
+}
+
+button li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+    color: white;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/****************************************************MENU**************************************************/
+.menu-toggle {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*********************************** Responsive Design **************************************/
+
+@media screen and (max-width: 768) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+        display: none;
+    }
+
+    .gallery {
+        gap: 15px;
+    }
+
+
+
+    section {
+        padding: 1rem;
+        max-width: 768px;
+    }
+
+    .competence {
+        flex-direction: column;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:300px) and (max-width: 767px) {
+
+
+    .competence-right {
+        display: none !important;
+    }
+
+    .competence-left {
+        display: none !important;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .container {
+        padding: 0;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        padding: 8px;
+
+    }
+
+
+    form label {
+        font-size: 0.9rem;
+
+    }
+
+    #accueil {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .accueil h1 {
+        font-size: 2rem !important;
+    }
+
+    .accueil {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accueil button {
+        width: 270px !important;
+        text-align: center;
+        align-items: center;
+        margin: 15px 0;
+    }
+
+    .accueil .btn a {
+        font-size: 1.5em !important;
+    }
+
+    #apropos video {
+        width: 96%;
+        border-radius: 10px;
+    }
+
+
+
+    #apropos,
+    #accueil,
+    #competences,
+    #portfolio {
+        padding: 2px;
+        width: 96%;
+    }
+
+    #apropos button {
+        text-align: center;
+        align-items: center;
+        margin: 15px 0;
+    }
+
+    #apropos {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .apropos {
+        width: 90% !important;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+
+    }
+
+    #competences h2 {
+        font-size: 2.5rem !important;
+
+    }
+
+    .image-accueil img {
+        width: 90% !important;
+
+    }
+
+    .competence-image img {
+        width: 90% !important;
+        border-radius: 0 !important;
+
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    header img {
+        width: 50px;
+        height: 20px;
+        border-radius: 5px;
+    }
+
+    header,
+    footer {
+        width: 100% !important;
+        padding: 0;
+
+
+    }
+
+    .menu-toggle {
+        display: block;
+        width:300px ;
+
+}
+
+
+
+/**********************************************BODY***************************************/
+
+.image-accueil img {
+    height: 400px;
+    width: 400px;
+    border-radius: 1px;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1800px;
+
+}
+
+#accueil {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accueil p {
+    font-size: 1.3em;
+    color: #055730;
+}
+
+.accueil h1 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #055730;
+}
+
+.accueil button {
+    justify-content: center;
+}
+
+.accueil .btn {
+    padding: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.accueil .btn a {
+    font-size: 2em;
+}
+
+.accueil {
+    width: 40%;
+    align-items: center;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project .btn {
+    margin-right: 0px;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #055730;
+    color: #fff;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #055730;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/********************************************A PROPOS*************************************/
+#apropos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apropos h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.apropos {
+    width: 40%;
+}
+
+
+.apropos button {
+    justify-content: center;
+}
+
+.apropos .btn {
+    padding: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.apropos .btn a {
+    font-size: 2em;
+}
+
+#competences h2 {
+    font-size: 4rem;
+}
+
+#competences {
+    text-align: center;
+}
+
+.competence a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #055730;
+}
+
+.competence {
+    display: flex;
+    justify-content: space-between;
+}
+
+.competence-image img {
+    border-radius: 100%;
+}
+
+.competence-right {
+    justify-content: space-evenly;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.competence-left {
+    justify-content: space-evenly;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.competence-image .btn {
+    margin: 5px;
+}
+
+#contact {
+    width: 40%;
+}
+}

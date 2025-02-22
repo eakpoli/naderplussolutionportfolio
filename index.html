@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="headerMobile.css">
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header id="header">
+
+
+        <nav>
+            <button class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <img src="/images/bacompe2.jpeg" alt="images" style="height: 4rem;">
+            <ul class="nav-bar" id="nav-bar">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+            </ul>
+            <button class="btn">
+                <li><a href="#contact">Contactez-moi</a></li>
+            </button>
+
+            <li class="contact-icon"><a href="#contact">📞</a></li>
+
+        </nav>
+        <!--HEADER-->
+    </header>
+
+
+
+
+    <!-- Section Accueil -->
+
+    <div class="container">
+
+        <section id="accueil">
+            <div class="accueil">
+
+                <h1>Bienvenue sur NS Portfolio</h1>
+                <p>Bonjour ! Je suis un étudiant en programmation passionné par le développement web et la création de
+                    solutions
+                    innovantes. Ce portfolio reflète mon parcours, mes projets et mes compétences acquises au fil
+                    du
+                    temps.
+                    Un espace pour découvrir mes réalisations, compétences et ambitions professionnelles.
+                </p>
+                <button class="btn">
+                    <ul style="padding-left: 2px;">
+                        <li><a href="#header">Explorez Maintenant</a></li>
+                    </ul>
+                </button>
+            </div>
+            <div class="image-accueil">
+                <img src="/images/logo.jpeg" alt="images">
+            </div>
+
+
+        </section>
+
+        <!-- Section Portfolio -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <div class="project">
+                    <img src="/images/projet_site.jpeg" alt="image">
+                    <h3>Site Web de Blog</h3>
+                    <p>Un site de blog dynamique permettant aux utilisateurs de publier, commenter et partager des
+                        articles.
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="images/aplication.jpeg" alt="image">
+                    <h3>Application de To-Do List</h3>
+                    <p>Une application pour gérer vos tâches quotidiennes avec une interface intuitive.</p>
+                </div>
+                <div class="project">
+                    <img src="images/dyna.jpg" alt="image">
+                    <h3>Portfolio Dynamique</h3>
+                    <p>Un portfolio interactif construit avec HTML, CSS et JavaScript.</p>
+                    <button class="btn">
+                        <ul style="padding-left: 2px;">
+                            <li><a href="/portfolio.html">En Savoir plus</a></li>
+                        </ul>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="apropos">
+            <div class="apropos">
+
+                <h2>À propos</h2>
+                <p>Je suis un étudiant motivé avec une forte passion pour le codage et la conception. J'ai appris à
+                    créer
+                    des
+                    applications web réactives et à résoudre des problèmes complexes grâce à une formation académique
+                    solide
+                    et
+                    des projets personnels.
+                </p>
+                <button class="btn">
+                    <ul style="padding-left: 2px;">
+                        <li><a href="/apropos.html">En Savoir Plus</a></li>
+                    </ul>
+                </button>
+            </div>
+            <video src="/images/naderplusv.mp4" controls muted autoplay height="250px" width="400px"></video>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="competences">
+            <h2>Explorez Mes Compétences Éblouissantes</h2>
+            <div class="competence">
+
+                <div class="competence-left">
+                    <a href="/depannage.html">Depanage PC</a>
+                    <a href=""> Decoration&Cuisine </a>
+                </div>
+                <div class="competence-image">
+                    <img src="/images/logo1.jpeg" alt="image" style="height: 400px;" width="400px">
+                    <button class="btn">
+                        <ul style="padding-left: 2px;">
+                            <li><a href="/competences.html">En Savoir Plus</a></li>
+                        </ul>
+                    </button>
+                </div>
+                <div class="competence-right">
+                    <a href="/programation.html">Programmation web </a>
+                    <a href="/formateur.html">formateur en ligne</a>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- Section Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" placeholder="Votre message ici..." required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Pied de page -->
+        <footer>
+            <p>&copy; 2025 Naderplus Solution Portfolio. Tous droits réservés.</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('nav-bar').classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
